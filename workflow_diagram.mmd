@@ -1,0 +1,26 @@
+flowchart LR
+ subgraph s1["Research Agent"]
+		direction TD
+		BA("Plan the research process")
+		BB("Run search queries using web_search_tool")
+		BC("Synthesize the competitor report")
+		BD("Return report and research diary")
+  end
+ subgraph s2["Review Agent"]
+		direction TD
+		CA("Review according to specific criteria")
+		CB("Return decision, feedback, and review diary")
+ end
+ subgraph s3["Loop"]
+	D{"Report accepted?"}
+ end
+	BA --> BB
+	BB --> BC
+	BC --> BD
+	CA --> CB
+    A("Client Request") --> s1
+    s1 --> s2
+    s2 --> s3
+    s3 -->|False| s1
+    s3 -->|True| E("Report generated and reviewed")
+	

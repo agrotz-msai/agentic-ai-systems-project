@@ -14,7 +14,7 @@ and evaluate that workflow for different scenarios. A short summary concludes th
 The main component of the project is the Jupyter notebook 'agentic_system.ipynb'.
 Note that in order to run the notebook, valid API keys for OpenAI and Tavily are required, which need to be set in the ".env" file contained in the repository.
 
-The repository also contains a 'requirements.txt' file with all required dependencies, which was generated via the command
+The repository contains a 'requirements.txt' file with all required dependencies, which was generated via the command
 	
 	pip freeze > requirements.txt
 	
@@ -27,4 +27,6 @@ It can be used e.g. in a virtual Anaconda environement by opening an Anaconda pr
 	jupyter notebook
 	
 The last command opens a Jupyter GUI, where one needs to click on the notebook 'agentic_system.ipynb' and then click on Run... -> Run All Cells
+
+In addition, the repository contains a mermaid script 'workflow-diagram.mmd', which can be used to generate a workflow diagram e.g. on https://mermaid.ai/live/edit
 
