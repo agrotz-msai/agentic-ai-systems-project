@@ -1,4 +1,4 @@
-# agentic_ai_systems_project
+# agentic-ai-systems-project
 This my sixth project in the capstone course of Udacity's Master's Degree in AI (https://www.udacity.com/masters-artificial-intelligence). 
 
 ## Overview
